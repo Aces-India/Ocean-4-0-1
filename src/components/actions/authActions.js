@@ -9,7 +9,7 @@ export const registerUser = (userData, history) => {
   console.log("yes", history);
   axios
     .post(
-      "https://ocean-user-serverbackend.onrender.com/api/users/register",
+      "https://ocean-4-1-userserver.onrender.com/api/users/register",
       userData
     )
     .then((res) => alert("Registered Successfull pls Login"))
@@ -19,10 +19,7 @@ export const registerUser = (userData, history) => {
 export const loginUser = (userData, props) => {
   console.log(props);
   axios
-    .post(
-      "https://ocean-user-serverbackend.onrender.com/api/users/login",
-      userData
-    )
+    .post("https://ocean-4-1-userserver.onrender.com/api/users/login", userData)
     .then((res) => {
       const { token } = res.data;
       localStorage.setItem("jwtToken", token);
