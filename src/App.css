@@ -710,3 +710,27 @@ tr {
   background-color: #5d6d7e;
   color: #d9e1ea;
 }
+
+.tableC {
+  border-collapse: collapse;
+  width: 75%;
+  margin-left: 100px;
+}
+
+.tableC th,
+.tableC td {
+  border: 1px solid #181818;
+  padding: 8px;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+
+/* .tableC th {
+  background-color: #ffffff;
+  font-weight: bold;
+} */
+
+.tableC tbody td:hover {
+  background-color: #d2d2d2;
+}
