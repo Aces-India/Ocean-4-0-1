@@ -30,7 +30,7 @@ export const loginUser = (userData, props) => {
     })
 
     .catch((err) => {
-      alert("Email or password invalid");
+      console.log(err);
     });
 };
 
